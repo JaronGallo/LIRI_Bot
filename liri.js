@@ -71,7 +71,7 @@ function getWhatItSays() {
     fs.readFile('./random.txt', "utf8", function(err, data) {
         var spotify = new Spotify({
             id: 'd55c756a59a241e2904f6843dc67aa18',
-            secret: '999c4bddb5304cbf92abd7ce066f39c7'
+            secret: 'Spotify Secret Here'
         });
 
         var data1 = data.split(",");
@@ -102,7 +102,7 @@ function getSpotify() {
       var songName = process.argv[3];
       var spotify = new Spotify({
         id: 'd55c756a59a241e2904f6843dc67aa18',
-        secret: '999c4bddb5304cbf92abd7ce066f39c7'
+        secret: 'Spotify Secret Here'
       });
 
       spotify.search({
@@ -141,7 +141,7 @@ function getTweets() {
     });
 
     var options = {
-        screen_name: 'imMikeCheck',
+        screen_name: 'Twitter Username Here',
         count: 20
     };
 
